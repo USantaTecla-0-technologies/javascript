@@ -1,6 +1,6 @@
-alert(true == true);
-alert(true != false);
-alert(false < true);
-alert(false <= false);
-alert(true > false);
-alert(true >= true);
+console.log(true == true);
+console.log(true != false);
+console.log(false < true);
+console.log(false <= false);
+console.log(true > false);
+console.log(true >= true);

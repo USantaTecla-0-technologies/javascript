@@ -1,2 +1,2 @@
-alert(true);
-alert(false);
+console.log(true);
+console.log(false);

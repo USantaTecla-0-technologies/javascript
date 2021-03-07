@@ -1,5 +1,5 @@
-alert('Hola mundo!!!');
-alert(31.41592e-1);
-alert("31.41592e-1");
-alert(true);
-alert("'true'");
+console.log('Hola mundo!!!');
+console.log(31.41592e-1);
+console.log("31.41592e-1");
+console.log(true);
+console.log("'true'");

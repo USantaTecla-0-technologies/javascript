@@ -1,9 +1,9 @@
-alert(false && false);
-alert(false && true);
-alert(true && false);
-alert(true && true);
+console.log(false && false);
+console.log(false && true);
+console.log(true && false);
+console.log(true && true);
 
-alert(false \|\| false);
-alert(false \|\| true);
-alert(true \|\| false);
-alert(true \|\| true);
+console.log(false \|\| false);
+console.log(false \|\| true);
+console.log(true \|\| false);
+console.log(true \|\| true);

@@ -1,14 +1,14 @@
-alert("cadena" == "cadena");
-alert("cadena" != "cadena distinta");
-alert("cadena" < "cadena mayor");
-alert("cadena" <= "cadena mayor o igual");
-alert("cadena" > "caden a menor ");
-alert("cadena" >= "caden a menor o igual");
+console.log("cadena" == "cadena");
+console.log("cadena" != "cadena distinta");
+console.log("cadena" < "cadena mayor");
+console.log("cadena" <= "cadena mayor o igual");
+console.log("cadena" > "caden a menor ");
+console.log("cadena" >= "caden a menor o igual");
 
-alert("ana" < "bernardo");
-alert("bernardo" < "carmen");
-alert("carmen" < "carmencita");
+console.log("ana" < "bernardo");
+console.log("bernardo" < "carmen");
+console.log("carmen" < "carmencita");
 
-alert("Ana" < "ana");
-alert(" ana" < "ana");
-alert("ana" < "ana ");
+console.log("Ana" < "ana");
+console.log(" ana" < "ana");
+console.log("ana" < "ana ");

@@ -1,4 +1,4 @@
-alert("Buenas" + 'Tardes');
-alert("Buenas " + 'Tardes');
-alert("Buenas " + ' Tardes');
-alert("1" + "2" + "3");
+console.log("Buenas" + 'Tardes');
+console.log("Buenas " + 'Tardes');
+console.log("Buenas " + ' Tardes');
+console.log("1" + "2" + "3");
