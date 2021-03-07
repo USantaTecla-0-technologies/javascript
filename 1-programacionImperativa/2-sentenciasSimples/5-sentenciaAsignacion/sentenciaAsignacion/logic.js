@@ -1,0 +1,12 @@
+let crazyVariable = "Esto es de locos!";
+alert(crazyVariable);
+crazyVariable = 666;
+alert(crazyVariable);
+crazyVariable = Infinity;
+alert(crazyVariable);
+crazyVariable = NaN;
+alert(crazyVariable);
+crazyVariable = false;
+alert(crazyVariable);
+crazyVariable = undefined;
+alert(crazyVariable);

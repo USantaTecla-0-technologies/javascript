@@ -1,0 +1,13 @@
+x=100;
+alert(x += 2); 
+alert(x -= 2);
+alert(x *= 2);
+alert(x **= 2);
+alert(x /= 2);
+alert(x %= 7);
+alert(x &= 2);
+alert(x \|= 2);
+alert(x ^= 2);
+alert(x <<= 2);
+alert(x >>= 2);
+alert(x >>>= 2);

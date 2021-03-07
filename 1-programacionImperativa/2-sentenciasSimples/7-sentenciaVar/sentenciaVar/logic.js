@@ -1,0 +1,13 @@
+alert(crazyVariable);
+crazyVariable = "Esto es de locos!";
+alert(crazyVariable);
+crazyVariable = 666;
+alert(crazyVariable);
+crazyVariable = Infinity;
+alert(crazyVariable);
+var crazyVariable = NaN;
+alert(crazyVariable);
+crazyVariable = false;
+alert(crazyVariable);
+var crazyVariable = undefined;
+alert(crazyVariable);

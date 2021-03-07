@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Conversor de tipos en Javascript</title>
+  <style type="text/css">
+    table {
+      margin-bottom: 50px;
+      border: 1px solid black;
+    }
+    td {
+      border: 1px solid black;
+    }
+    .NaN,.false {
+      color : red;
+    }
+    .undefined {
+      background-color: rgb(128, 128, 128);
+    }
+    .number {
+      background-color: rgb(128, 255, 128);
+    }
+    .boolean {
+      background-color: rgb(255, 128, 128);
+    }
+    .string {
+      background-color: rgb(128, 128, 255);
+    }
+  </style>
+  <script type="text/javascript" src="conversorTiposJavascript.js"></script>
+</head>
+
+<body id="body" onload="generate();">
+  <h1>Conversión de tipos en Javascript</h1>
+  <table>
+    <tr>
+
+      <td>
+        <h2>Tipos primitivos</h2>
+        <table>
+          <tr><td class="undefined">undefined</td></tr>
+          <tr><td class="boolean">boolean</td></tr>
+          <tr><td class="number">number</td></tr>
+          <tr><td class="string">string</td></tr>
+        </table>
+      </td>
+      
+      <td>
+        <h2>Operadores binarios</h2>
+        <table>
+          <tr>
+            <td><b>operador</b></td>
+            <td><b>value1 </b></td>
+            <td><b>value2</b></td>
+            <td><b>...</b></td>
+            <td><b>valueN</b></td>
+          </tr>
+          <tr>
+            <td><b>value1</b></td>
+            <td><b>value1 operador value1 </b></td>
+            <td><b>value1 operador value2</b></td>
+            <td><b>...</b></td>
+            <td><b>valueN operador valueN</b></td>
+          </tr>
+          <tr>
+            <td><b>value1</b></td>
+            <td><b>value2 operador value1 </b></td>
+            <td><b>value2 operador value2</b></td>
+            <td><b>...</b></td>
+            <td><b>valueN operador valueN</b></td>
+          </tr>
+          <tr>
+            <td><b>...</b></td>
+            <td><b>...</b></td>
+            <td><b>...</b></td>
+            <td><b>...</b></td>
+            <td><b>...</b></td>
+          </tr>
+          <tr>
+            <td><b>valueN</b></td>
+            <td><b>valueN operador value1</b></td>
+            <td><b>valueN operador value2</b></td>
+            <td><b>...</b></td>
+            <td><b>valueN operador valueN</b></td>
+          </tr>
+        </table>
+      </td>
+
+      <td>
+        <h2>Operadores unarios</h2>
+        <table>
+          <tr>
+            <td><b>operador</b></td>
+            <td><b>value1 </b></td>
+          </tr>
+          <tr>
+            <td><b>value1</b></td>
+            <td><b>operador value1 </b></td>
+          </tr>
+          <tr>
+            <td><b>value1</b></td>
+            <td><b>operador value2</b></td>
+          </tr>
+          <tr>
+            <td><b>...</b></td>
+            <td><b>...</b></td>
+          </tr>
+          <tr>
+            <td><b>valueN</b></td>
+            <td><b>operador valueN</b></td>
+          </tr>
+        </table>  
+      </td>
+
+    </tr>
+  </table>
+ 
+</body>
+
+</html>
