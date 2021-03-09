@@ -5,6 +5,6 @@ for (let i = 0; i < 19; i++) {
     }
     msg += "1\n";
 }
-alert(msg);
+console.log(msg);
 
 
