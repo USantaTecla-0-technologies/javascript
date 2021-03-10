@@ -22,8 +22,8 @@ const coin2 = amount2 / 2;
 
 const COINS_OF = " moneda(s) de ";
 console.log(coin50 + COINS_OF + 50 + "\n" 
-  + coin20 + COINS_OF + 50 + "\n" 
-  + coin10 + COINS_OF + 20 + "\n" 
-  + coin5 + COINS_OF + 10 + "\n" 
+  + coin20 + COINS_OF + 20 + "\n" 
+  + coin10 + COINS_OF + 10 + "\n" 
+  + coin5 + COINS_OF + 5 + "\n" 
   + coin2 + COINS_OF + 2 + "\n" 
   + amount + COINS_OF + 1);
