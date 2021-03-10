@@ -1,4 +1,3 @@
 let number = +prompt("Escribe un número? ");
-let parity = (number & 1 != 1) ? "par" : "impar";
+const parity = (number & 1 == 1) ? "impar" : "par";
 console.log("El numero " + number + " es " + parity);
-
