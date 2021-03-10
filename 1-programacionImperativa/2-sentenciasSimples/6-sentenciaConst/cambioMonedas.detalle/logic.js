@@ -19,9 +19,11 @@ const amount2 = amount - amount % 2;
 amount = amount - amount2;
 
 const coin2 = amount2 / 2;
-console.log(coin50 + " moneda(s) de 50\n" 
-  + coin20 + " moneda(s) de 20\n" 
-  + coin10 + " moneda(s) de 10\n" 
-  + coin5 + " moneda(s) de 5\n" 
-  + coin2 + " moneda(s) de 2\n" 
-  + amount + " moneda(s) de 1");
+
+const COINS_OF = " moneda(s) de ";
+console.log(coin50 + COINS_OF + 50 + "\n" 
+  + coin20 + COINS_OF + 50 + "\n" 
+  + coin10 + COINS_OF + 20 + "\n" 
+  + coin5 + COINS_OF + 10 + "\n" 
+  + coin2 + COINS_OF + 2 + "\n" 
+  + amount + COINS_OF + 1);
