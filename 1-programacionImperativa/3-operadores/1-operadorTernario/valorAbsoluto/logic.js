@@ -1,4 +1,4 @@
 let number = +prompt("Escribe un número: ");
-let factor = number < 1 ? -1 : 1;
-let absoluteValue = factor * number;
-console.log("El numero " + number + " es " + absoluteValue);
+const factor = number < 1 ? -1 : 1;
+const absolute = factor * number;
+console.log("El valor absoluto del número " + number + " es " + absolute);
