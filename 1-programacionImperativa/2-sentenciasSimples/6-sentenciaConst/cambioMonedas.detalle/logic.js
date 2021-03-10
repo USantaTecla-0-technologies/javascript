@@ -1,26 +1,31 @@
-let amount = +prompt("Dame la cantidad de céntimos: ");
+  let amount = +prompt("Dame la cantidad de céntimos: ");
 
-const amount50 = amount - amount % 50;
-amount = amount - amount50;
-const amount20 = amount - amount % 20;
-amount = amount - amount20;
-const amount10 = amount - amount % 10;
-amount = amount - amount10;
-const amount5 = amount - amount % 5;
-amount = amount - amount5;
-const amount2 = amount - amount % 2;
-amount = amount - amount2;
+  let remainder50 = amount;
+  let remainder20 = remainder50 % 50;
+  let remainder10 = remainder20 % 20;
+  let remainder5 = remainder10 % 10;
+  let remainder2 = remainder5 % 5;
+  const remainder1 = remainder2 % 2;
+  
+  remainder50 = remainder50 - remainder20;
+  remainder20 = remainder20 - remainder10;
+  remainder10 = remainder10 - remainder5;
+  remainder5 = remainder5 - remainder2;
+  remainder2 = remainder2 - remainder1;
+  
+  const coins50 = remainder50 / 50;
+  const coins20 = remainder20 / 20;
+  const coins10 = remainder10 / 10;
+  const coins5 = remainder5 / 5;
+  const coins2 = remainder2 / 2;
+  
+  const COINS_OF = " moneda(s) de ";
+  console.log("El cambio de " + amount + " es:\n"
+    + coins50 + COINS_OF + 50 + "\n" 
+    + coins20 + COINS_OF + 20 + "\n" 
+    + coins10 + COINS_OF + 10 + "\n" 
+    + coins5 + COINS_OF + 5 + "\n" 
+    + coins2 + COINS_OF + 2 + "\n" 
+    + remainder1 + COINS_OF + 1);
 
-const coin50 = amount50 / 50;
-const coin20 = amount20 / 20;
-const coin10 = amount10 / 10;
-const coin5 = amount5 / 5;
-const coin2 = amount2 / 2;
-
-const COINS_OF = " moneda(s) de ";
-console.log(coin50 + COINS_OF + 50 + "\n" 
-  + coin20 + COINS_OF + 20 + "\n" 
-  + coin10 + COINS_OF + 10 + "\n" 
-  + coin5 + COINS_OF + 5 + "\n" 
-  + coin2 + COINS_OF + 2 + "\n" 
-  + amount + COINS_OF + 1);
+  

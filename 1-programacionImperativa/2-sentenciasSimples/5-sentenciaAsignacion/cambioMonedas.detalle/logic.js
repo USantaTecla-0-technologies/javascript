@@ -1,24 +1,28 @@
 let amount = +prompt("Dame la cantidad de céntimos: ");
 
-let amount50 = amount - amount % 50;
-amount = amount - amount50;
-let amount20 = amount - amount % 20;
-amount = amount - amount20;
-let amount10 = amount - amount % 10;
-amount = amount - amount10;
-let amount5 = amount - amount % 5;
-amount = amount - amount5;
-let amount2 = amount - amount % 2;
-amount = amount - amount2;
+let remainder50 = amount;
+let remainder20 = remainder50 % 50;
+let remainder10 = remainder20 % 20;
+let remainder5 = remainder10 % 10;
+let remainder2 = remainder5 % 5;
+let remainder1 = remainder2 % 2;
 
-let coin50 = amount50 / 50;
-let coin20 = amount20 / 20;
-let coin10 = amount10 / 10;
-let coin5 = amount5 / 5;
-let coin2 = amount2 / 2;
-console.log(coin50 + " moneda(s) de 50\n" 
-  + coin20 + " moneda(s) de 20\n" 
-  + coin10 + " moneda(s) de 10\n" 
-  + coin5 + " moneda(s) de 5\n" 
-  + coin2 + " moneda(s) de 2\n" 
-  + amount + " moneda(s) de 1");
+remainder50 = remainder50 - remainder20;
+remainder20 = remainder20 - remainder10;
+remainder10 = remainder10 - remainder5;
+remainder5 = remainder5 - remainder2;
+remainder2 = remainder2 - remainder1;
+
+let coins50 = remainder50 / 50;
+let coins20 = remainder20 / 20;
+let coins10 = remainder10 / 10;
+let coins5 = remainder5 / 5;
+let coins2 = remainder2 / 2;
+
+console.log("El cambio de " + amount + " es:\n"
+  + coins50 + " moneda(s) de 50\n" 
+  + coins20 + " moneda(s) de 20\n" 
+  + coins10 + " moneda(s) de 10\n" 
+  + coins5 + " moneda(s) de 5\n" 
+  + coins2 + " moneda(s) de 2\n" 
+  + remainder1 + " moneda(s) de 1");
