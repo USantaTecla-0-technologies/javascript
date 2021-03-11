@@ -5,7 +5,6 @@ function print(data, title) {
   }
 }
 
-// selección directa
 function minPosition(values, from) {
   let min = from;
   for (let j = from + 1; j < values.length; j++) {

@@ -5,7 +5,6 @@ function print(data, title) {
   }
 }
 
-// burbuja
 function sort(values) {
   let change;
   do {

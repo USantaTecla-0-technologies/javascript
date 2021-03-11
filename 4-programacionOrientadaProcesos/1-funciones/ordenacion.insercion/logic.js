@@ -21,7 +21,6 @@ function sort(data) {
   }
 }
 
-console.log("Insercion directa");
 let measures = [5, 4, 3, 2, 1];
 print(measures, "desordenados");
 sort(measures);

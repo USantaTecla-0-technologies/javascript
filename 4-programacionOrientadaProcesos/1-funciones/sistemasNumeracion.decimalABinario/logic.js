@@ -1,8 +1,8 @@
 let decimalNumber = +prompt("Dame un numero? ")
-let SIZE_BITS = 32
-let msg = "";
+const SIZE_BITS = 32
+let binaryNumber = "";
 for(let i=0; i<SIZE_BITS; i++){
-	msg = (decimalNumber & 1) + msg
-  decimalNumber >>= 1
+	binaryNumber = (decimalNumber & 1) + binaryNumber;
+  decimalNumber >>= 1;
 }
-console.log(msg)
+console.log(binaryNumber);
