@@ -1,33 +1,41 @@
-let data = [23, 34, 43, 34, 56, 23, 26, 23];
+let data = [5, 7, 5, 12, 1, 0, 1];
 
-  function average(values) {
-    let sum = 0;
-    for (let i = 0; i < values.length; i++) {
-      sum += values[i];
-    }
-    return parseInt(sum / values.length);
+function average(values) {
+  let sum = 0;
+  for (let i = 0; i < values.length; i++) {
+    sum += values[i];
   }
+  return parseInt(sum / values.length);
+}
 
-  function printHistogram(values) {
-    let avg = average(values);
+function max(values){
+  let position = 0;
+  for(let i=1; i<values.length; i++){
+    if (values[position] < values[i]){
+      position = i;
+    }
+  }
+  return values[position];
+}
+
+function printHistogram(values) {
+  const avg = average(values);
+  let histogram = "";
+  for (let i = max(values); i > 0; i--) {
     let line = "";
-    let histogram = "";
-    for (let i = 100; i > 0; i--) {
-      for (let j = 0; j < values.length; j++) {
-        if (i == avg) {
-          line += "-";
-        } else if (i <= values[j]) {
-          line += "*";
-        } else if (i > values[j]) {
-          line += " ";
-        }
-
+    for (let j = 0; j < values.length; j++) {
+      if (i == avg) {
+        line += "-";
+      } else if (i <= values[j]) {
+        line += "*";
+      } else if (i > values[j]) {
+        line += " ";
       }
-      line += "\n";
     }
+    line += "\n";
     histogram += line;
-    console.log(histogram);
   }
+  console.log(histogram);
+}
 
-  printHistogram(data);
-  
+printHistogram(data);
