@@ -1,3 +1,3 @@
-let side = prompt("Dame el lado del cuadrado: ")
+let side = prompt("Dame el lado del cuadrado: ");
 console.log("Perímetro: " + (side * 4) + "\n"
-  + "Area: " + (side ** 2))
+  + "Area: " + (side ** 2));
