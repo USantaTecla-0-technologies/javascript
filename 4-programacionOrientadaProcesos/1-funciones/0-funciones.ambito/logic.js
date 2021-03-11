@@ -1,14 +1,16 @@
-let global= 3;
+let global= 1;
 console.log(global);
-let igual = 13;
+let igual = 2;
 console.log(igual);
 //console.log(local); Error!!! 
 
 function ambito() {
+    global--;
     console.log(global);
-    let igual = 666;
+    let igual = 0;
+    igual--;
     console.log(igual);
-    let local = 7;
+    let local = 3;
     console.log(local);
 }     
 console.log(global);
@@ -19,20 +21,18 @@ console.log(global);
 console.log(igual);
 //console.log(local); Error!!! 
 
-/* hoisting de variables: let */
 let variable = "cadena";
-function hoisting() {
+function withHoisting() {
     console.log(variable);
-    let variable = 7;
+    var variable = 7;
     console.log(variable);
 }
 
 console.log(variable);
-hoisting();
+withHoisting();
 console.log(variable);
     
-/* sin hoisting de variables y constantes: let y const */
-function sinHoisting() {
+function withoutHoisting() {
     //console.log(variable); Error!!!
     //console.log(constante); Error!!!
     let variable = 13;
@@ -44,5 +44,5 @@ function sinHoisting() {
 };
 
 console.log(variable);
-sinHoisting();
+withoutHoisting();
 console.log(variable);
