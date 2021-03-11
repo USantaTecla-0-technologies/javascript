@@ -1,27 +1,15 @@
-/* métodos push y pop de arrays */ 
-t.push("escondido");
-t.push("otro");
-t.push(false);
-console.log("XXX");
-console.log(t);
-console.log(t.find((x)=>(x==="escondido")));
-console.log(t.pop());
-console.log(t.pop());
-console.log(t.pop());
-console.log("YYY");
-console.log(t);
-console.log(t.find((x)=>(x==="escondido")));
+let array = [];
+array.push("escondido");
+array.push("otro");
+array.push(false);
+console.log(array);
+console.log(array.pop());
+console.log(array.pop());
+console.log(array.pop());
+console.log(array);
             
-/* métodos indexOf, splice, find, map, ... */
-let tt=[1,2,3,4,5,6,7,8,9,10];
-console.log(tt.indexOf(7));
-console.log(tt.splice(7,2));
-console.log(tt);
-console.log(tt.find(x => x>5));
-
-console.log(tt.map(x =>x>5));                   
-let t = [1,2,3,4];
-console.log(t);
-console.log(t.map(value => value**2));
-t.forEach((value, index, array) => array[index]=value+1);
-console.log(t);
+/* métodos indexOf, splice, ... */
+array = [1,2,3,4,5,6,7,8,9,10];
+console.log(array.indexOf(7));
+console.log(array.splice(7,2));
+console.log(array);

@@ -1,3 +1,5 @@
+let array = [];
+
 /* añadir elementos al array asociativo */
 array[0] = 10;
 console.log("length: " + array.length);
