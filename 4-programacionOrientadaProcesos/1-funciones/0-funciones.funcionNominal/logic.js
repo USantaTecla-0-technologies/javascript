@@ -6,14 +6,15 @@ console.log(nominal);
 console.log(nominal());
 console.log(typeof nominal());
 
-/* funciones locales */
 function contenedora() {
-    function anidada() {
-        console.log("anidada");
+    let local = -1;
+    function anidada(arg) {
+        console.log("anidada" + arg);
     }
     console.log("contenedora");
-    anidada();
+    anidada(local);
     console.log("contenedora");
 }
 contenedora();
+//local = ...; Error!!!
 //anidada(); Error!!!
