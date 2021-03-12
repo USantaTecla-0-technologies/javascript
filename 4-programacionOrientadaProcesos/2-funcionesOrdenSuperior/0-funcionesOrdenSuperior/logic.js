@@ -1,3 +1,7 @@
+function doble(number){
+    return 2*number;
+}
+
 function sumatorioDoble(ini, fin){
     let sum = 0;
     for(let i=ini; i<=fin; i++){
@@ -5,16 +9,23 @@ function sumatorioDoble(ini, fin){
     }
     return sum;
 }
-console.log(sumatorioDoble(1,10));
-    
-function sumatorioFibonacci(ini, fin){
+console.log(sumatorioDoble(1,5));
+
+function factorial(number){
+    let result = 1;
+    for(let i=1; i<=number; i++){
+        result *= i;
+    }
+    return result;
+}
+function sumatorioFactorial(ini, fin){
     let sum = 0;
     for(let i=ini; i<=fin; i++){
-        sum += fibonacci(i);
+        sum += factorial(i);
     }
     return sum;
 }
-console.log(sumatorioFibonacci(1,10));
+console.log(sumatorioFactorial(1,5));
     
 /* función de orden superior */
 function sumatorio(ini, fin, serie) {
@@ -24,7 +35,7 @@ function sumatorio(ini, fin, serie) {
     }
     return sum;
 }
-console.log(sumatorio(1, 10, fibonacci));
-console.log(sumatorio(1, 10, doble));
+console.log(sumatorio(1, 5, factorial));
+console.log(sumatorio(1, 5, doble));
 
 

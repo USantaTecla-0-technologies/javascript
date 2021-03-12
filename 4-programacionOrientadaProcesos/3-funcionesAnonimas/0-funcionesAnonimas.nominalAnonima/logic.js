@@ -20,5 +20,13 @@ function ambitoAnonima(){
         return 1;
     }
 }
-
 console.log(ambitoAnonima());
+
+// formato
+function global(){
+    return local();
+    function local(){
+        return -1;
+    }
+}
+console.log(global());

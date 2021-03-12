@@ -2,13 +2,11 @@
 array.push("escondido");
 array.push("otro");
 array.push(false);
-console.log("XXX");
 console.log(array);
 console.log(array.find((x)=>(x==="escondido")));
 console.log(array.pop());
 console.log(array.pop());
 console.log(array.pop());
-console.log("YYY");
 console.log(array);
 console.log(array.find((x)=>(x==="escondido")));
             
