@@ -1,43 +1,60 @@
-function getLength(number){
+function getLength(number) {
   let digits = 0;
-  while (number > 0){
-    number = parseInt(number/10);
+  while (number > 0) {
+    number = parseInt(number / 10);
     digits++;
   }
   return digits;
 }
 
-function getRightDigit(number, position){
-  for(let i=0; i<position-1; i++){
-    number = parseInt(number/10);
+function getRightDigit(number, position) {
+  for (let i = 0; i < position - 1; i++) {
+    number = parseInt(number / 10);
   }
-  return number%10;
+  return number % 10;
 }
 
-function toRoman(digit){
-  let roman = palitos(digit);   
-  if (4<= digit && digit <= 8){
-    if (digit<5)
-    roman +="V";
-  }else {
-    roman = "V"+roman;
-  } else if (digit == 9){
-    roman += "X";
+const CODES = [
+  ["I","V","X"],
+  ["C","D","M"],
+  ["X","L","C"]];
+
+const UNITS = 0;
+const TEENS = 1;
+const CENTS = 2;
+
+function toUnitsRoman(digit, position) {
+  const x = digit % 5;
+  if (x < 4) {
+    let msg = "";
+    for (let i = 0; i < x; i++) {
+      msg += CODES[position][UNITS];
+    }
+    return msg
   }
+  return "I";
 }
 
-
-function decimalToRoman(num) {
-  let codes = [
-    ["M", "D", "C"],
-    ["C", "L", "X"],
-    ["X", "V", "I"]
-  ]
-  let result = "";
-  for (let i = 0; i < separatedNumbers.length; i++) {
-    result += toRomanSystem(codes[i], separatedNumbers[i]);
+function toDigitRoman(digit, position) {
+  let roman = toUnitsRoman(digit, position);
+  if (4 <= digit && digit <= 8) {
+    if (digit < 5) {
+      roman += CODES[position][TEENS];
+    } else {
+      roman = CODES[position][TEENS] + roman;
+    }
+  } else if (digit == 9) {
+    roman += CODES[position][CENTS];
   }
-  return result;
+  return roman;
+}
+
+function toRoman(decimal) {
+  let roman = "";
+  for (let i = 0; i < decimal.length; i++) {
+    roman += toRomanSystem(codes[i], separatedNumbers[i]);
+  }
+  return roman;
 }
 
 function toDigits(number) {

@@ -16,7 +16,7 @@ function ambitoAnonima(){
         return 0;
     }
     return a();
-    let a = function(){
+    a = function(){
         return 1;
     }
 }

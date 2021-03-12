@@ -27,6 +27,4 @@ function sumatorio(ini, fin, serie) {
 console.log(sumatorio(1, 10, fibonacci));
 console.log(sumatorio(1, 10, doble));
 
-console.log(sumatorio(1, 10, (x) => { return 2*x; }));
-console.log(sumatorio(1, 10, x => { return 2*x; }));
-console.log(sumatorio(1, 10, x => 2*x));
+

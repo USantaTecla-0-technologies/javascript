@@ -52,3 +52,18 @@ let flechaSoloRetorno =
 console.log(typeof flechaSoloRetorno);
 console.log(flechaSoloRetorno);
 console.log(flechaSoloRetorno(1));
+
+function sumatorio(ini, fin, serie) {
+	let sum = 0;
+	for(let i=ini; i<=fin; i++){
+			sum += serie(i);
+	}
+	return sum;
+}
+console.log(sumatorio(1, 10, (x) => { return 2*x; }));
+console.log(sumatorio(1, 10, x => { return 2*x; }));
+console.log(sumatorio(1, 10, x => 2*x));
+let h = function(x) { 
+	return 2*x; 
+}
+console.log(sumatorio(1, 10, h));
