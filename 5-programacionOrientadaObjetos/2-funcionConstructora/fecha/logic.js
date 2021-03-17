@@ -46,8 +46,6 @@ for (let i = 0; i < 12; i++) {
     position++;
   }
 }
-console.log();
-
 console.log("El " + date.toString() + " cae a "
   + ["primeros", "mediados", "ultimos"][position % 3] + " "
   + ["primavera", "verano", "otoño", "invierno"][season] + ".");

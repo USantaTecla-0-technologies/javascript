@@ -30,6 +30,14 @@ console.log(g);
 console.log(g());
 console.log(typeof g());
 
+function gg() {
+    console.log("anonima");
+};
+console.log(typeof gg);
+console.log(gg);
+console.log(gg());
+console.log(typeof gg());
+
 nominal = function() {
     console.log("re-nominal");
 };
@@ -37,6 +45,7 @@ console.log(typeof nominal);
 console.log(nominal);
 console.log(nominal());
 console.log(typeof nominal());
+
 
 /* igualdad por referencia */
 function una() { 

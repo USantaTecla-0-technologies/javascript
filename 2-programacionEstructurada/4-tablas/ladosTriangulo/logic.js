@@ -5,14 +5,7 @@ for (let i = 0; i < SIDES; i++) {
 
 let msg = "Los lados ";
 for (let i = 0; i < SIDES; i++) {
-  msg += sides[i];
-  if (i == SIDES - 1) {
-    msg += " ";
-  } else if (i < SIDES - 2) {
-    msg += ", ";
-  } else {
-    msg += " y ";
-  }
+  msg += sides[i] + [", ", " y ", " "][i];
 }
 let greater = sides[0];
 let sum = sides[0];

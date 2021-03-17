@@ -34,8 +34,8 @@ console.log(y.c());
 console.log(typeof y.c());
 
 /* objeto JSON */
-console.log(JSON.stringify(x));
-console.log(typeof JSON.stringify(x));
+console.log(JSON.stringify(z));
+console.log(typeof JSON.stringify(z));
 console.log(JSON.parse('{"a":7,"aa":7,"y":{}}'));
 console.log(typeof JSON.parse('{"a":7,"aa":7,"y":{}}'));
 
