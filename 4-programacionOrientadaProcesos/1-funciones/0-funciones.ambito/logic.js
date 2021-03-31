@@ -1,3 +1,17 @@
+function contenedora() {
+    let local = -1;
+    function anidada(arg) {
+        console.log("anidada" + arg);
+    }
+    console.log("contenedora");
+    anidada(local);
+    console.log("contenedora");
+}
+contenedora();
+//local = ...; Error!!!
+//anidada(); Error!!!
+
+
 let global= 1;
 console.log(global);
 let igual = 2;
