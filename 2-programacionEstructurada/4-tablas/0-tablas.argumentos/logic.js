@@ -1,4 +1,3 @@
-/* array arguments por defecto */
 function sum(){
     let sum = 0;
     for(argument of arguments){

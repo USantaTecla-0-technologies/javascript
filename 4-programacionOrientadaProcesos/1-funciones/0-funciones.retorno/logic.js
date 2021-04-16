@@ -1,12 +1,12 @@
-function doble (value){
-    return value*2;
+function double(value) {
+    return value * 2;
 }
-console.log(doble(333))
+console.log(double(333))
 
-function fibonacci(value){
-    if (value<=2) {
+function factorial(value) {
+    if (value == 0) {
         return 1;
     }
-    return fibonacci(value-1) + fibonacci(value-2);
+    return value * factorial(value - 1);
 }
-console.log(fibonacci(6))
+console.log(factorial(6))

@@ -35,28 +35,16 @@ console.log(global);
 console.log(igual);
 //console.log(local); Error!!! 
 
-let variable = "cadena";
-function withHoisting() {
-    console.log(variable);
-    var variable = 7;
-    console.log(variable);
-}
-
-console.log(variable);
+// hoisting    
 withHoisting();
-console.log(variable);
-    
-function withoutHoisting() {
-    //console.log(variable); Error!!!
-    //console.log(constante); Error!!!
-    let variable = 13;
-    const constante = 666;
-    //let variable = 666; Error!!! no permite redeclaración
-    //let constante = 7; Error!!! no permite redeclaración
-    console.log(variable);
-    console.log(constante);
+
+function withHoisting() {
+    console.log("withHoisting");
+    innerWithHoisting();
+    console.log("withHoisting");
+
+    function innerWithHoisting() {
+        console.log("innerWithHoisting");
+    }    
 };
 
-console.log(variable);
-withoutHoisting();
-console.log(variable);

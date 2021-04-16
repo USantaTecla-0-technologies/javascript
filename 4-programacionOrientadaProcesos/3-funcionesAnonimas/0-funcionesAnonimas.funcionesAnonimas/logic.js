@@ -13,6 +13,7 @@ console.log(typeof function() {
 
 /* variables de tipo función */
 function nominal(){
+    console.log("nomima");
     return true;
 }
 
@@ -23,7 +24,7 @@ console.log(f());
 console.log(typeof f());
 
 let g = function() {
-        console.log("anonima");
+        console.log("anonima g");
     };
 console.log(typeof g);
 console.log(g);
@@ -31,7 +32,7 @@ console.log(g());
 console.log(typeof g());
 
 function gg() {
-    console.log("anonima");
+    console.log("nominal gg");
 };
 console.log(typeof gg);
 console.log(gg);
@@ -45,7 +46,6 @@ console.log(typeof nominal);
 console.log(nominal);
 console.log(nominal());
 console.log(typeof nominal());
-
 
 /* igualdad por referencia */
 function una() { 

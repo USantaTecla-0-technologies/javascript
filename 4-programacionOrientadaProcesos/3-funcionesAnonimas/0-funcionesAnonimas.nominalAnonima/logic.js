@@ -1,4 +1,4 @@
-// con hoisting: funciones nominales
+/* con hoisting: funciones nominales */
 function ambitoNominal(){
     function nominal(){
         return 0;
@@ -10,7 +10,7 @@ function ambitoNominal(){
 }
 console.log(ambitoNominal());
 
-// sin hoisting: con funciones anónimas
+/* sin hoisting: con funciones anónimas */
 function ambitoAnonima(){
     let a = function(){
         return 0;
@@ -22,9 +22,10 @@ function ambitoAnonima(){
 }
 console.log(ambitoAnonima());
 
-// formato
+/* formato */
 function global(){
     return local();
+
     function local(){
         return -1;
     }
