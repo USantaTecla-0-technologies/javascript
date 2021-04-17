@@ -31,7 +31,7 @@ let msg = `Aproximadamente has vivido
 	${seconds} segundos
 `;
 
-age = 83 - age;
+age = 84.6 - age;
 months = age * MONTHS_PER_YEAR;
 weeks = age * WEEKS_PER_YEAR;
 days = age * DAYS_PER_YEAR;

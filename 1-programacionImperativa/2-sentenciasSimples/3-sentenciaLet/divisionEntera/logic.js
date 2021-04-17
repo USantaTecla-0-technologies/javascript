@@ -1,6 +1,6 @@
 let dividend = +prompt("Dame el dividendo: ");
-let divisor = +prompt("Dame el divisor: ");
-let remainder = dividend % divisor;
+let divider = +prompt("Dame el divisor: ");
+let remainder = dividend % divider;
 let integer = dividend - remainder;
-let quotient = integer / divisor;
-console.log(dividend + " / " + divisor + " = " + quotient + " y sobran " + remainder);
+let quotient = integer / divider;
+console.log(dividend + " / " + divider + " = " + quotient + " y sobran " + remainder);
