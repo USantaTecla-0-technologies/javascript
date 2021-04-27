@@ -8,7 +8,6 @@ estado();
 estado();
 console.log(estado.variable);
 
-/* asignación por referencia */
 let f1 = estado;
 let f2 = estado;
 let f3 = f1;

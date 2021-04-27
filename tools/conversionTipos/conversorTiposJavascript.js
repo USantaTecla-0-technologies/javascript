@@ -18,6 +18,7 @@ function generate() {
   }]) {
     generateOperators(operators);
   }
+  
 }
 
 const H2 = 2;
