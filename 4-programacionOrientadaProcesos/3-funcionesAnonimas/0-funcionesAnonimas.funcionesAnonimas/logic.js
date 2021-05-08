@@ -39,6 +39,12 @@ console.log(gg);
 console.log(gg());
 console.log(typeof gg());
 
+g = gg;
+console.log(typeof g);
+console.log(g);
+console.log(g());
+console.log(typeof g());
+
 nominal = function() {
     console.log("re-nominal");
 };
