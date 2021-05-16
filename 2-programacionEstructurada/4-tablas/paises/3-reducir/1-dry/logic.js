@@ -1,9 +1,7 @@
 function max(values) {
   let result = values[0];
   for (let value of values) {
-    if (result < value) {
-      result = value;
-    }
+    result = result < value ? value : result;
   }
   return result;
 }

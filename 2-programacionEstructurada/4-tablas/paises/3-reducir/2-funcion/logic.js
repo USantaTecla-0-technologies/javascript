@@ -8,7 +8,7 @@ function reduce(array, combine, start) {
 
 function max(values) {
   return reduce(values, 
-    (left, right) => left > right ? left : right, values[0]);
+    (acum, value) => acum > value ? acum : value, values[0]);
 }
 
 console.log("Maximo de numeros: ", 
@@ -35,10 +35,29 @@ console.log("El maximo de las areas de la región asiatica: ",
 console.log("Lista de nombres por linea: ",
   reduce(
     countries.map(country => country.name),
-    (acum, item) => acum + "\n" + item, ""));
+    (acum, value) => acum + "\n" + value, ""));
 
 console.log("Lista de nombres en HTML: ",
   reduce(
     countries.map(country => country.name),
-    (acum, item) => acum + "\n\t<li>" + item + "</li>", "<ul>")
+    (acum, value) => acum + "\n\t<li>" + value + "</li>", "<ul>")
   + "\n</ul>");
+
+  function acojoGen(countries, format){
+    const FORMATS = {
+      TXT : {
+        start : "",
+        combine : (acum, value) => acum + "\n" + value,
+        finish : ""
+      },
+      HTML : {
+        start : "<ul>",
+        combine : (acum, value) => acum + "\n\t<li>" + value + "</li>",
+        finish : "\n</ul>"
+      }
+    }
+    return reduce(
+      countries.map(country => country.name),
+        FORMATS[format].combine, FORMATS[format].start)
+    + FORMATS[format].finish;
+  }
