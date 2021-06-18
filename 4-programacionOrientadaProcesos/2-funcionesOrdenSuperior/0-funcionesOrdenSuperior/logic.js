@@ -28,14 +28,19 @@ function sumatorioFactorial(ini, fin){
 console.log(sumatorioFactorial(1,5));
     
 /* función de orden superior */
-function sumatorio(ini, fin, serie) {
+function sumatorio(ini, fin, f) {
     let sum = 0;
     for(let i=ini; i<=fin; i++){
-        sum += serie(i);
+        sum += f(i);
     }
     return sum;
 }
 console.log(sumatorio(1, 5, factorial));
 console.log(sumatorio(1, 5, doble));
+
+console.log(sumatorio(1, 5, function (x) {
+    return x +1;
+}));
+console.log(sumatorio(1, 5, x => x +1));
 
 
